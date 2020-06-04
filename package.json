@@ -1,0 +1,32 @@
+{
+  "name": "fun",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "DEV_ENV=true nodemon --ext '.js,.jsx' --ignore 'dist' index.js",
+    "start": "node index.js",
+    "types": "tsc",
+    "build": "babel src --out-dir lib --copy-files --extensions '.js,.jsx'"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/runtime": "^7.6.3",
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.6.3",
+    "@babel/preset-typescript": "^7.6.0",
+    "@babel/register": "^7.6.2",
+    "parcel-bundler": "^1.12.4",
+    "constantinople": "^3.1.2",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "express-handlebars": "^4.0.4",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "typescript": "^3.6.4"
+  }
+}
